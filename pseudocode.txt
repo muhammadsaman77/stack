@@ -1,0 +1,41 @@
+Program membuat class Node
+
+deklarasi 
+var value : any
+var next : Node
+Constructor Node()
+setNext() : void
+getNext() : Node
+getValue() : any
+toString()  : String
+
+Program membuat Stack
+
+deklarasi
+var first : Node
+
+algoritma
+DEFINE FUNCTION push(value : any) : void
+    var temp : Node = Node(value)
+    if first == null
+        then first = temp
+    else temp.setNext(first)
+        then first = temp
+
+DEFINE FUNCTION haspop() : boolean
+    return first != null
+
+DEFINE FUNCTION pop() : void
+    if this.hasPop()
+        then first = first.getNext()
+
+
+DEFINE FUNCTION toString() : String
+    var str : String= ""
+    var temp : Node = first
+    while (temp.getNext()!= null)
+        str = str + temp.toString()
+        temp = temp.getNext()
+        end while loop
+    str = str + temp.toString()
+    return str
